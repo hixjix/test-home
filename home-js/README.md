@@ -1,2 +1,0 @@
-# test-home
-# home-js

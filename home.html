@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的家</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">歡迎來到我的家</h1>
+        <nav>
+            <ul>
+                <li><a href="menu1.html">地理環境</a></li>
+                <li><a href="menu2.html">關於我們</a></li>
+                <li><a href="#">產品</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h2>關於我們</h2>
+            <p>這是我家的網站，我們提供高品質的產品和服務。</p>
+            <p>我們位於<span id="address">高雄市楠梓區</span>，歡迎您到訪。</p>
+            <p>聯絡我們：<span id="contact">聯絡方式</span></p>
+            <p>工作單位:國立高雄科技大學環境與安全衛生工程系</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>圖片展示</h2>
+        <div class="containerimage">
+            <div class="image" id="image1"></div>
+                <img src="image1.jpg" width="500px" height="auto">
+            <div class="image" id="image2" ></div>
+                <img src="image2.jpg" width="500px" height="auto">
+            <div class="image" id="image3"></div>
+                <img src="image3.jpg" width="500px" height="auto">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 我的家</p>
+    </footer>
+    
+    <style>
+        
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    background-size: cover;
+    height: 1000px;
+    width:auto;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1.title {
+    font-size: 200px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 200px ;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.containerimage{
+display: flex;
+justify-content: center;  /* 水平置中對齊 */
+
+}
+
+#intro {
+    background-color: #f9f9f9;
+}
+
+#address {
+    font-weight: bold;
+}
+
+#contact {
+    font-weight: bold;
+}
+#gallery{
+    text-align: center;
+}
+.image{
+    margin: 20px;
+}
+#gallery .containerimage {
+        opacity: 0;
+        transform: translateX(-100%);    
+}
+footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+        }
+
+    </style>
+    <script src="home.js"></script>
+</body>
+</html>

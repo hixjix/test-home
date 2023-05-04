@@ -8,8 +8,33 @@
         <header>
             <h1>關於我and我的室友</h1>
         </header>
-
+        
+        <section>
+            <div class="our">
+                <p id="name">XXX</p>
+                <p id="intro">畢業於新營高工資訊科，目前就讀國立高雄科技大學環安系</p>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2023 我的家</p>
+        </footer>
         <style>
+            #name {
+                font-size: 60px;
+                font-weight: bold;
+            }
+            #intro {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+            }
+            section {
+                background-image:url( "menu2-background.jpg") ;
+                background-size:auto;
+                background-position: center;
+                
+                height: 100vh; /* 填滿整個視窗高度 */
+            }
             body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -19,7 +44,7 @@
         }
             header {
             background-color: #333;
-            background-size: contain;
+            background-size:cover;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -28,8 +53,19 @@
                 font-size: 40px;
                 font-weight: bold;
             }
+            footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        
+        footer p {
+            margin: 0;
+        }
         </style>
 
-
+        <script src="menu2.js"></script>
     </body>    
 </html>

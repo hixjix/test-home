@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // 調整圖片的透明度和位移效果
             container.style.opacity = scrollRatio;
-            container.style.transform = `translateX(${(1 - scrollRatio) }px)`;
+            container.style.transform = `translateX(${(0.5 - scrollRatio) }px)`;
             container.style.transition = `opacity 1s, transform 1s ${index * 10}s`;
         });
     });

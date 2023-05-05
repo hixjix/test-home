@@ -38,6 +38,15 @@
                 <img src="image3.jpg" width="500px" height="auto">
         </div>
     </section>
+    <section id="form1">
+        <h2>聯絡我們</h2>
+        <form action="process.php" method="post" id="form">
+            <label for="name">姓名：</label>
+            <input type="text" name="name" id="name" required><br><br>
+            <label for="email">郵箱：</label>
+            <input type="email" name="email" id="email" required><br><br>
+            <input type="submit" value="提交">
+    </section>
 
     <footer>
         <p>&copy; 2023 我的家</p>
@@ -113,6 +122,8 @@ justify-content: center;  /* 水平置中對齊 */
 }
 .image{
     margin: 20px;
+    opacity: 0;
+    
 }
 #gallery .containerimage {
         opacity: 0;
